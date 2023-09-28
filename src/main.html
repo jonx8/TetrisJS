@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/tetris.css">
+    <title>Tetris</title>
+</head>
+<body>
+<header>
+    <img class="tetris-logo" src="images/tetris-logo.png" alt="Логотип Тетриса">
+    <div id="username-label">Игрок: <a href="index.html"></a></div>
+</header>
+<main>
+    <div class="left-side">
+        <section class="next-figure-section">
+            <h4>Следующая фигура</h4>
+            <div class="row">
+                <div class="shape-block"></div>
+                <div class="shape-block block-0--2"></div>
+                <div class="shape-block"></div>
+                <div class="shape-block"></div>
+            </div>
+
+            <div class="row">
+                <div class="shape-block block--1--1"></div>
+                <div class="shape-block block-0--1"></div>
+                <div class="shape-block block-1--1"></div>
+                <div class="shape-block"></div>
+            </div>
+
+            <div class="row">
+                <div class="shape-block block--1-0"></div>
+                <div class="shape-block" id="center-block"></div>
+                <div class="shape-block block-1-0"></div>
+                <div class="shape-block"></div>
+            </div>
+
+            <div class="row">
+                <div class="shape-block block--1-1"></div>
+                <div class="shape-block block-0-1"></div>
+                <div class="shape-block block-1-1"></div>
+                <div class="shape-block"></div>
+            </div>
+
+        </section>
+
+        <section class="game-rules">
+            <p>Текущий уровень: <span class="current-level">1</span></p>
+            <p>Очки: <span class="score">0</span></p>
+            <h4>Управление:</h4>
+            <p>Стрелка влево - перемещение влево<br>
+                Стрелка вправо - перемещение вправо<br>
+                Стрелка вниз - перемещение вниз<br>
+                Стрелка вверх - поворот фигуры</p>
+            <div class="start-game-btn-wrapper">
+                <button class="start-game-btn">Старт</button>
+            </div>
+        </section>
+
+    </div>
+    <section class="records">
+        <!-- Victory or defeat label-->
+        <h4 class="final-label"></h4>
+        <div>Вы набрали <span class="score">0</span> очков</div>
+        <div class="records-list">
+            <ol class="username-list"></ol>
+            <ol class="points-list"></ol>
+        </div>
+        <button class="restart-button">Начать новую игру</button>
+        <button><a href="index.html">Выбор пользователя</a></button>
+    </section>
+
+    <canvas id="canvas" width="200" height="400">
+        <p>Ваш браузер не поддерживает canvas-элементы</p>
+    </canvas>
+</main>
+<script src="scripts/main.js" type="module"></script>
+</body>
+</html>
