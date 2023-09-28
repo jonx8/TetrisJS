@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: #42AAFF;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 50px 0;
+}
+
+#canvas {
+    margin-right: 0;
+    margin-left: 50px;
+    height: 400px;
+    width: 200px;
+    border: #ffdddd 3px solid;
+    background-color: antiquewhite;
+}
+
+#username-label > a {
+    color: firebrick;
+}
+
+#username-label > a:hover {
+    color: orange;
+}
+
+.current-level, .score {
+    padding-bottom: 5px;
+}
+
+.final-label {
+    padding: 0;
+    margin: 0 0 20px;
+    font-size: 24px;
+}
+
+
+.game-rules {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    background-color: #718fd2;
+    padding: 10px 3%;
+    margin: 0 5%;
+}
+
+.game-rules > h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.game-rules > p {
+    margin: 0;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-right: 10%;
+}
+
+.records {
+    width: 40%;
+    height: 70%;
+    overflow: hidden;
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ff1a65;
+}
+
+
+.records > button {
+    margin: 10px;
+    padding: 5px;
+}
+
+.records-list {
+    width: 100%;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.points-list {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.next-figure-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.next-figure-section > h4 {
+    margin: 14px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.shape-block {
+    width: 20px;
+    height: 20px;
+    border: black groove 1px;
+    background-color: gainsboro;
+    margin: 0;
+    padding: 0;
+}
+
+.shape-block.active-block {
+    background-color: green;
+}
+
+.start-game-btn-wrapper {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.start-game-btn {
+    width: 20%;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+
+.tetris-logo {
+    height: 40px;
+}
+
+.username-list {
+    padding: 0 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    max-width: 30%;
+    height: 1em;
+    list-style-position: inside;
+}
+
+.username-list > li {
+    white-space: nowrap;
+    overflow: clip;
+    text-overflow: ellipsis;
+
+}
